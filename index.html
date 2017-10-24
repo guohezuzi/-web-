@@ -8,7 +8,7 @@
     <style>
         #head {
             width: 100%;
-            height: 100px;
+            height: 80px;
             margin-top: 10px;
             margin-bottom: 20px;
             border: 2px solid black;
@@ -57,10 +57,14 @@
 
         #foot {
             width: 100%;
-           height: 100px;
+            height: 100px;
             background-color: black;
             float: left;
             margin: 10px;
+        }
+        
+        .body{
+            background-color: antiquewhite;
         }
 
         .title:link {
@@ -80,12 +84,39 @@
         .title:active {
             color: black;
         }
+
+        .nav {
+            float: right;
+            width: 70%;
+            height:inherit;
+        }
+
+        .li{
+            float: left;
+            margin-right:20px;
+            font-size: 30px;
+       /*     border-style: double;*/
+        }
+
+        .ul{
+            margin-top: 15px;
+            list-style-type: none;
+        }
     </style>
 </head>
 
-<body>
+<body class="body">
     <div id="head">
         <a class="title" href="index.html" style="font-size: 60px">孔目湖文学社</a>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="Intronduction.html" class="title">社团简介</a></li>
+                <li class="li"><a href="share.html" class="title">美文分享</a></li>
+                <li class="li"><a href="talking" class="title">文谈文坛</a></li>
+                <li class="li"><a href="others.html" class="title">奇闻轶事</a></li>
+                <li class="li"><a href="email.html" class="title">投稿邮箱</a></li>
+            </ul>
+        </nav>
     </div>
     <div id="right1"></div>
     <div id="body1"></div>
