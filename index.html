@@ -62,8 +62,8 @@
             float: left;
             margin: 10px;
         }
-        
-        .body{
+
+        .body {
             background-color: antiquewhite;
         }
 
@@ -85,33 +85,39 @@
             color: black;
         }
 
-        .nav {
+        nav {
             float: right;
             width: 70%;
-            height:inherit;
+            height: inherit;
         }
 
-        .li{
+        .li {
             float: left;
-            margin-right:20px;
+            margin-right: 20px;
             font-size: 30px;
-       /*     border-style: double;*/
+            background-color: blue;
+            /*     border-style: double;*/
         }
 
-        .ul{
+        .ul {
             margin-top: 15px;
             list-style-type: none;
         }
     </style>
+    <script>
+        function getblue(obj) {
+            obj.style.backgroundColor = "blue";
+        }
+    </script>
 </head>
 
 <body class="body">
     <div id="head">
         <a class="title" href="index.html" style="font-size: 60px">孔目湖文学社</a>
-        <nav class="nav">
+        <nav>
             <ul class="ul">
                 <li class="li"><a href="Intronduction.html" class="title">社团简介</a></li>
-                <li class="li"><a href="share.html" class="title">美文分享</a></li>
+                <li class="li" onfocus="getblue(this)"><a href="share.html" class="title">美文分享</a></li>
                 <li class="li"><a href="talking" class="title">文谈文坛</a></li>
                 <li class="li"><a href="others.html" class="title">奇闻轶事</a></li>
                 <li class="li"><a href="email.html" class="title">投稿邮箱</a></li>
