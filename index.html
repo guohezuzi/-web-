@@ -9,18 +9,18 @@
         nav {
             width: 100%;
             height: 80px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            /*border: 2px solid black;*/
             float: left;
+            position: fixed;
+            border: 2px double #584343;
+            background-color: #fff0f0;
         }
 
         #right1 {
             width: 20%;
             height: 300px;
-            background: #d6d6d6;
+            background-color: #faefef;
             float: right;
-            margin-top: 10px;
+            margin-top: 90px;
         }
 
         #body1 {
@@ -28,7 +28,9 @@
             height: 280px;
             background-color: #d6d6d6;
             float: left;
-            margin: 10px;
+            margin: 90px 10px 10px 10px;
+            background-image: url(img/envelop0.jpg);
+            background-size:100% 280px;
         }
 
         #body2 {
@@ -37,6 +39,8 @@
             background-color: #d6d6d6;
             float: left;
             margin: 10px;
+            background-image: url(img/envelop0.jpg);
+            background-size:100% 280px;
         }
 
         #body3 {
@@ -45,6 +49,8 @@
             background-color: #d6d6d6;
             float: left;
             margin: 10px;
+            background-image: url(img/envelop0.jpg);
+            background-size:100% 280px;
         }
 
         #body4 {
@@ -53,12 +59,14 @@
             background-color: #d6d6d6;
             float: left;
             margin: 10px;
+            background-image: url(img/envelop0.jpg);
+            background-size:100% 280px;
         }
 
-        #foot {
+        footer {
             width: 100%;
             height: 100px;
-            background-color: black;
+            background-color: #433535;
             float: left;
             margin: 10px;
         }
@@ -67,6 +75,12 @@
             background-image: url(img/bkg.jpg);
         }
 
+        .title{
+
+            padding: 24px 0px;
+            height: 80px;
+            width: auto;
+        }
         .title:link {
             color: black;
             text-decoration: none;
@@ -78,7 +92,8 @@
         }
 
         .title:hover {
-            color: black;
+            background: Burlywood;
+            color: rgba(48, 48, 211, 0.88);
         }
 
         .title:active {
@@ -90,14 +105,17 @@
             float: left;
             margin-right: 20px;
             font-size: 30px;
+            margin: 0px;
             /*     border-style: double;*/
         }
 
         .ul {
-            margin-top: 15px;
             list-style-type: none;
         }
 
+        .search {
+            margin-top: 15px;
+        }
     </style>
     <script>
         function getblue(obj) {
@@ -107,27 +125,30 @@
         function getback(obj) {
             obj.style.backgroundColor = "rgba(69, 44, 44, 0)";
         }
-
     </script>
 </head>
 
 <body class="body">
     <nav>
-        <a href="index.html" style="float: left"><img src="img/title.jpg"/></a>
+        <a href="index.html" class="logo"><img src="img/title.jpg"/></a>
         <ul class="ul">
             <li class="li"><a href="Intronduction.html" class="title">社团简介</a></li>
-            <li class="li" onmouseover="getblue(this)" onmouseout="getback(this)"><a href="share.html" class="title">美文分享</a></li>
+            <li class="li"><a href="share.html" class="title">美文分享</a></li>
             <li class="li"><a href="talking" class="title">文谈文坛</a></li>
             <li class="li"><a href="others.html" class="title">奇闻轶事</a></li>
             <li class="li"><a href="email.html" class="title">投稿邮箱</a></li>
         </ul>
+        <form>
+            <input class="search" name="search" type="text" size="13px" />
+            <input class="button" name="" type="button" value="搜索" />
+        </form>
     </nav>
     <div id="right1"></div>
     <div id="body1"></div>
     <div id="body2"></div>
     <div id="body3"></div>
     <div id="body4"></div>
-    <div id="foot"></div>
+    <footer></footer>
 
 </body>
 
