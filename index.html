@@ -5,39 +5,88 @@
     <meta charset="UTF-8">
     <title>孔目湖文学社</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script>
-        function getblue(obj) {
-            obj.style.backgroundColor = "blue";
-        }
-
-        function getback(obj) {
-            obj.style.backgroundColor = "rgba(69, 44, 44, 0)";
-        }
-    </script>
 </head>
 
 <body>
     <nav>
         <a href="index.html" class="logo"><img src="img/title.gif"/></a>
         <ul>
-            <li><a href="Intronduction.html" class="title">社团简介</a></li>
-            <li><a href="share.html" class="title">美文分享</a></li>
-            <li><a href="talking.html" class="title">文谈文坛</a></li>
-            <li><a href="others.html" class="title">奇闻轶事</a></li>
-            <li><a href="email.html" class="title">投稿邮箱</a></li>
+            <li><a href="Intronduction.html">社团简介</a></li>
+            <li><a href="share.html">美文分享</a></li>
+            <li><a href="talking.html">文谈文坛</a></li>
+            <li><a href="others.html">奇闻轶事</a></li>
+            <li><a href="email.html">投稿邮箱</a></li>
         </ul>
         <form>
             <input name="search" type="text" size="20px" />
             <input name="" type="button" value="搜索" />
         </form>
     </nav>
-    <div id="body1"></div>
-    <div id="right1"></div>
-    <div id="body2"></div>
-    <div id="body3"></div>
-    <div id="body4"></div>
-    <div id="bottom"></div>
-    <footer></footer>
+    <div id="body1">
+        <div id="pic"><img src="img/article/pic3.jpg"></div>
+        <div id="article">
+            <a href="#">你在我心中最温暖——访信息工程学院辅导员王一杰</a>
+            <p id="description">&nbsp;&nbsp;2017年5月7日，孔目湖文学社记者站记者在校南区8栋204室，采访到了忙碌的信息学院辅导员王一杰。他阳光般温暖的微笑让我们更轻松地开始了对他的采访。</p>
+            <div id="art_bottom">王绪平&nbsp;&nbsp;&nbsp;&nbsp;12月7日</div>
+        </div>
+    </div>
+    <div id="right1">
+        <h1>热门文章</h1>
+    </div>
+    <div id="body2">
+        <div id="pic" style="background-image: url(../img/article/pic4.jpg);
+    background-size: cover";></div>
+        <div id="article">
+            <a href="#">沉睡王国</a>
+            <p id="description">&nbsp;&nbsp;天气真是冷的可爱极了，一阵一阵的风把昏睡的人吹得精神饱满。正下落的太阳也忙赶回家避寒。 看着落日渐满西山，国王的眼睛里尽是幽暗的光。
+            </p>
+            <div id="art_bottom">汪煌锋&nbsp;&nbsp;&nbsp;&nbsp;12月7日</div>
+        </div>
+    </div>
+    <div id="body3">
+        <div id="pic" style="background-image: url(../img/article/pic2.jpg);
+    background-size: cover;"></div>
+        <div id="article">
+            <a href="#">无关紧要的人，遗失在风月里</a>
+            <p id="description">&nbsp;&nbsp;这些年经历了很多离离合合，有些人重逢，有些人相遇，有些人告别。小时候看书上写着“人生是一列开向死亡的火车，一路上会有很多过客，但终究走到最后的只有你一个人。”</p>
+            <div id="art_bottom">校外投稿&nbsp;&nbsp;&nbsp;&nbsp;12月7日</div>
+        </div>
+    </div>
+    <div id="body4">
+        <div id="pic" style="background-image: url(../img/article/pic5.jpg);
+    background-size: cover;"></div>
+        <div id="article">
+            <a href="#">又一次心跳</a>
+            <p id="description">&nbsp;&nbsp;他与她相遇于途中，简单的上衣，流行的踩脚裤加上低跟皮鞋衬出她柔美的身姿，青春而又未经世事的脸庞不知为何吸引了他的目光，她的身姿样貌久久萦绕在他的脑海里。</p>
+            <div id="art_bottom">熊琳&nbsp;&nbsp;&nbsp;&nbsp;12月7日</div>
+        </div>
+    </div>
+
+    <div class="weixin"></div>
+
+    <div id="bottom">
+        <div class="about">
+            <p style="margin: 5px 30px;font-family: 黑体">关于我们</p>
+            <p style="font-size: 10px;margin: 10px 30px;">&nbsp;&nbsp;&nbsp;&nbsp;孔目湖文学社成立于1981年，属于华东交通大学校级学生组织，社团现有社员90人。孔目湖文学社以《孔目湖》报为核心刊物，《孔目湖》报是一份由孔目湖文学社自主编排在全校范围内定时发放的文学性刊物。除了编排报纸外，社团定期举行“感动春天诗歌朗诵”，“花椒成语大会”等大型活动（赛事）。此类活动充分提高了社员各方面能力，同时丰富了交大学子的课余文化生活...</p>
+        </div>
+        <div class="contact">
+            <p style="margin: 5px 30px; font-family: 黑体">联系我们</p>
+            <ul>
+                <li><a href="http://blog.sina.com.cn/u/2847206652"><img src="img/blog.png"/></a></li>
+                <li><a href="https://weibo.com/u/2847206652"><img src="img/Weibo.png"/></a></li>
+                <li><img src="img/Wechat.png" onmouseover="display()"></li>
+                <script>
+                    function display() {
+                        document.getElementsByClassName("weixin").display = "block";
+                    }
+                </script>
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        Copyright@
+    </footer>
 </body>
 
 </html>
