@@ -250,3 +250,26 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+
+
+#right1 ul {
+    list-style:none;
+    font-size: 16px;
+    list-style-image:url(../img/Cloud-Camera-icon.png)
+}
+
+a {
+    text-decoration:none;
+    color: black
+}
+
+a:hover{
+    color: blue;
+}
+
+#right1 ul li {
+    margin: 4px;
+    position: relative;
+    right: 18px;
+}

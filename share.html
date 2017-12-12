@@ -1,1 +1,356 @@
-<!-- 美文分享 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>美文分享</title>
+    <link rel="stylesheet" type="text/css">
+    <!--href="css/main.css">-->
+    <style>
+        nav {
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgb(255, 247, 224);
+        }
+
+        nav ul a {
+            margin: 0px;
+            display: block;
+            line-height: 80px;
+            text-decoration: none;
+        }
+
+        nav ul a:link,
+        a:active,
+        a:visited {
+            color: black;
+        }
+
+
+        nav ul a:hover {
+            background: Burlywood;
+            color: rgba(48, 48, 211, 0.88);
+        }
+
+        nav li {
+            float: left;
+            font-size: 28px;
+            margin: 0px 10px;
+            line-height: 80px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0px;
+            font-family: 黑体;
+        }
+
+
+        .logo {
+            float: left;
+            margin-right: 15px;
+        }
+
+        nav form {
+            position: absolute;
+            left: 1090px;
+            line-height: 80px;
+        }
+
+        nav form input {
+            padding: 10px;
+            border-radius: 10px;
+            background: rgb(255, 247, 224);
+        }
+
+        body {
+            background-image: url(img/bkg.jpg);
+            background-size: 100% 100%;
+        }
+
+        /*#body1 {
+            width: 99%;
+            height: 280px;
+			background-color: cadetblue;
+            float: left;
+            margin: 10px;
+        }*/
+
+        #body2 {
+            width: 99%;
+            height: 280px;
+            background-color: rgb(255, 247, 224);
+            float: left;
+            margin: 10px;
+            font-size: 30px;
+
+        }
+
+        #body3 {
+            width: 99%;
+            height: 280px;
+            background-color: rgb(255, 247, 224);
+            float: left;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        #body4 {
+            width: 99%;
+            height: 280px;
+            background-color: rgb(255, 247, 224);
+            float: left;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        #foot {
+            width: 100%;
+            height: 60px;
+            /* background-color:;*/
+            float: left;
+            margin: 10px;
+            color: #F3080C;
+            font-size: 35px;
+            text-align: center;
+            padding: 10px 25px;
+        }
+
+        .body {
+            background-color: antiquewhite;
+        }
+
+
+        .good:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* .good:hover {
+            color: black;
+        }
+
+        .good:active {
+            color:black;
+        }*/
+
+        .limy {
+            float: left;
+            margin-right: 20px;
+            font-size: 30px;
+            display: inline-block;
+            color: aqua;
+        }
+
+        .pic2 {
+            float: left;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .pic2 li {
+            list-style: none;
+        }
+
+        .pic3 li {
+            list-style: none;
+        }
+
+        .pic4 li {
+            list-style: none;
+        }
+
+        .ul {
+            margin-top: 15px;
+            list-style-type: none;
+        }
+
+        .i2 {
+            list-style: none;
+        }
+
+        .i3 {
+            list-style: none;
+        }
+
+        .i4 {
+            list-style: none;
+        }
+
+        .n1 {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .n1 ul {
+            display: inline-block;
+        }
+
+        .n1 li {
+            float: left;
+            list-style: none;
+
+            padding: 8px 25px;
+            color: aqua;
+            font-size: 30px;
+        }
+
+        .p1 {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .p2 {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .p3 {
+            float: left;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        .about {
+            width: 50%;
+            height: 100px;
+            margin: 0px;
+            float: left;
+        }
+
+        .contact {
+            width: 50%;
+            height: 100px;
+            margin: 0px;
+            float: left;
+        }
+
+        .contact ul {
+            list-style-type: none;
+            margin: 0px 0px 0px 30px;
+        }
+
+        .contact li {
+            display: inline;
+            margin: 50px;
+            border-style: solid;
+            border-color: #ba9f7c;
+        }
+
+        .content {
+            height: 1280px;
+            position: absolute;
+            top: 100px;
+        }
+
+        #bottom {
+            width: 100%;
+            height: 100px;
+            background-color: #433535;
+            float: left;
+            margin: 10px 0px 0px 0px;
+            color: beige;
+        }
+
+        footer {
+            width: 100%;
+            height: 30px;
+            background-color: #312b2b;
+            margin: 0px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+
+    </style>
+    <script>
+        function display(id) {
+            var traget = document.getElementsByClassName(id);
+            if (traget.style.display === "none") {
+                traget.style.display = "";
+            } else {
+                traget.style.display = "none";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="img/title.gif"/></a>
+        <ul>
+            <li><a href="https://baike.baidu.com/item/%E5%AD%94%E7%9B%AE%E6%B9%96%E6%96%87%E5%AD%A6%E7%A4%BE">社团简介</a></li>
+            <li><a href="share.html">美文分享</a></li>
+            <li><a href="talking.html">文谈文坛</a></li>
+            <li><a href="others.html">奇闻轶事</a></li>
+            <li><a href="mailto:kongmuhu@hotmail.com">投稿邮箱</a></li>
+        </ul>
+        <form>
+            <input name="search" type="text" size="20px" />
+            <input type="button" value="搜索" />
+        </form>
+    </nav>
+
+    <div class="n1" id="share">
+        <ul>
+            <li><a href="share/fengdou.html" class="good">奋斗美文</a></li>
+            <li><a href="share/mengxiang.html" class="good">梦想美文</a></li>
+            <li><a href="share/qingchun.html" class="good">青春美文</a></li>
+        </ul>
+    </div>
+    <div id="body2">
+
+        <img class="p1" src="img/share/4.jpg" width="300" height="200" />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;再贫瘠的悬崖，也有在裂缝中生长的植物。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;绝处逢生，在有志者眼中，任何环境都有机遇的存在。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;只要善于寻找和发现，机会随处都有，但不会自行而来，更不可能不劳而获。</p>
+    </div>
+    <div id="body3">
+        <img class="p2" src="img/share/3.jpg" width="300" height="200" />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;记住，这个世界，没有一种痛是单为你准备的。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;因此，不要认为你是孤独的疼痛者。也不要认为，自己经历着最疼的疼痛。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;尘世的屋檐下，有多少人，就有多少事，就有多少痛，就有多少断肠人。</p>
+    </div>
+
+    <div id="body4">
+
+        <img class="p3" src="img/share/14.jpg" width="300" height="200" />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;愿你的世界里天天都是好天气。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;即便忘了带伞也要告诉自己：宝宝今天偏要淋雨！</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;原来驱赶阴霾的太阳是明媚的自己。</p>
+    </div>
+
+    <div id="bottom">
+        <div class="about">
+            <p style="margin: 5px 30px;font-family: 黑体,serif">关于我们</p>
+            <p style="font-size: 10px;margin: 10px 30px;">&nbsp;&nbsp;&nbsp;&nbsp;孔目湖文学社成立于1981年，属于华东交通大学校级学生组织，社团现有社员90人。孔目湖文学社以《孔目湖》报为核心刊物，《孔目湖》报是一份由孔目湖文学社自主编排在全校范围内定时发放的文学性刊物。除了编排报纸外，社团定期举行“感动春天诗歌朗诵”，“花椒成语大会”等大型活动（赛事)...</p>
+        </div>
+        <div class="contact">
+            <p style="margin: 5px 30px; font-family: 黑体,serif">联系我们</p>
+            <ul>
+                <li><a href="http://blog.sina.com.cn/u/2847206652"><img src="img/blog.png"/></a></li>
+                <li><a href="https://weibo.com/u/2847206652"><img src="img/Weibo.png"/></a></li>
+                <li><img src="img/Wechat.png" onmouseover="display('weixin')"></li>
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        Copyright@
+    </footer>
+</body>
+
+</html>
