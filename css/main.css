@@ -11,6 +11,53 @@ nav {
     background-color:rgb(255, 247, 224);
 }
 
+nav ul a{
+    margin: 0px;
+    display: block;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+nav ul a:link,a:active,a:visited {
+    color: black;
+}
+
+
+nav ul a:hover {
+    background: Burlywood;
+    color: rgba(48, 48, 211, 0.88);
+}
+
+nav li {
+    float: left;
+    font-size: 28px;
+    margin: 0px 10px;
+    line-height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    font-family: 黑体;
+}
+
+
+.logo {
+    float: left;
+    margin-right: 15px;
+}
+
+nav form {
+    position: absolute;
+    left: 1090px    ;
+    line-height: 80px;
+}
+
+nav form input {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(255, 247, 224);
+}
 #right1 {
     width: 20%;
     height: 300px;
@@ -81,56 +128,6 @@ footer {
 body {
     background-image: url(../img/bkg.jpg);
     margin: 0px;
-}
-
-nav ul a{
-    margin: 0px;
-    display: block;
-    line-height: 80px;
-    text-decoration: none;
-}
-
-nav ul a:link,a:active,a:visited {
-    color: black;
-}
-
-
-
-nav ul a:hover {
-    background: Burlywood;
-    color: rgba(48, 48, 211, 0.88);
-}
-
-nav li {
-    float: left;
-    font-size: 28px;
-    margin: 0px 10px;
-    line-height: 80px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0px;
-    font-family: 黑体;
-}
-
-
-
-.logo {
-    float: left;
-    margin-right: 15px;
-}
-
-nav form {
-    position: absolute;
-    left: 1090px    ;
-    line-height: 80px;
-}
-
-nav form input {
-    padding: 10px;
-    border-radius: 10px;
-    background: rgb(255, 247, 224);
 }
 
 #pic {
