@@ -101,9 +101,6 @@ nav ul a:hover {
     color: rgba(48, 48, 211, 0.88);
 }
 
-
-
-
 nav li {
     float: left;
     font-size: 28px;
@@ -130,15 +127,11 @@ nav form {
     line-height: 80px;
 }
 
-
-
 nav form input {
     padding: 10px;
     border-radius: 10px;
     background: rgb(255, 247, 224);
 }
-
-
 
 #pic {
     position: absolute;

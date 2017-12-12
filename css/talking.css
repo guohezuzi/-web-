@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-image: url(../img/bkg.jpg);
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:rgb(255, 247, 224);
+}
+
+nav ul a{
+    margin: 0px;
+    display: block;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+nav ul a:link,a:active,a:visited {
+    color: black;
+}
+
+nav ul a:hover {
+    background: Burlywood;
+    color: rgba(48, 48, 211, 0.88);
+}
+
+nav li {
+    float: left;
+    font-size: 28px;
+    margin: 0px 10px;
+    line-height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    font-family: 黑体;
+}
+
+.logo {
+    float: left;
+    margin-right: 15px;
+}
+
+nav form {
+    position: absolute;
+    left: 1090px    ;
+    line-height: 80px;
+}
+
+nav form input {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(255, 247, 224);
+}
+
+#head {
+	width: 100%;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+	float: left;
+}
+
+#right1 {
+	width:28%;
+	height: 350px;
+	background:  rgb(255,247,224);
+	float: right;
+	margin: 100px 10px 10px 10px;
+
+}
+
+#body1 {
+	width: 68.8%;
+	height: 350px;
+	background-color:  rgb(255,247,224);
+	float: left;
+	margin:100px 10px 10px 10px;
+}
+
+#body2 {
+	width: 98.5%;
+	height: 280px;
+	background-color: rgb(255,247,224);
+	float: left;
+	margin: 10px;
+}
+
+#body3 {
+	width: 98.5%;
+	height: 400px;
+	background-color: rgb(255,247,224);
+	float: left;
+	margin: 10px;
+}
+
+#body4 {
+	width: 100%;
+	height: 280px;
+	background-color: #d6d6d6;
+	float: left;
+	margin: 5px 0px;
+}
+
+#foot {
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	float: left;
+	margin: 5px 0px;
+}
+
+/*以上是head部分*/
+.join{
+	text-align: center;
+}
+.body1-title {
+	margin-top: 10px;
+	font: 28px "黑体";
+}
+.body1-text {
+	font: 15px "Microsoft YaHei";
+	color: #999;
+}
+.tu2{
+	float: left;
+	margin-left: 30px;
+}
+.text{
+	float: right;
+	text-align: center;
+}
+
+/*以上是body1部分*/
+.text1{
+	text-align: center;
+
+}
+/*以上是right1部分*/
+.ul1{
+	list-style-type: none;
+}
+
+
+.about{
+	height:300px;
+	text-align: center;
+	padding-top:10px;
+	margin-top:19px;
+}
+.pictures-clear{
+	text-align:center;
+	margin-left:150px;
+	margin-right:150px;
+}
+.picture{
+	float:left;
+	width:25%;
+}
+/*以上是body3部分*/
+
+#bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #433535;
+    float: left;
+    margin: 10px 0px 0px 0px;
+    color:beige;
+}
+
+.about1 {
+    width: 50%;
+    height:100px;
+    margin: 0px;
+    float: left;
+}
+
+.contact {
+    width: 50%;
+    height:100px;
+    margin: 0px;
+    float: left;
+}
+
+.contact ul {
+    list-style-type: none;
+    margin: 0px 0px 0px 30px;
+}
+
+.contact li {
+    display: inline;
+    margin: 50px;
+    border-style: solid;
+    border-color: #ba9f7c;
+}
+
+.content {
+    height: 1280px;
+    position: absolute;
+    top:100px;
+}
+
+.weixin {
+    float: right;
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 220px 70px 0px 0px;
+    background-color: red;
+    position: relative;
+    top: 30px;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: #312b2b;
+    margin: 0px;
+    float: left;
+    text-align:center;
+    line-height: 30px;
+}
