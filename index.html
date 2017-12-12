@@ -6,12 +6,22 @@
     <title>孔目湖文学社</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+<script>
+    function display(id) {
+        var traget = document.getElementsByClassName(id);
+        if (traget.style.display == "none") {
+            traget.style.display = "";
+        } else {
+            traget.style.display = "none";
+        }
+    }
+</script>
 
 <body>
     <nav>
         <a href="index.html" class="logo"><img src="img/title.gif"/></a>
         <ul>
-            <li><a href="Intronduction.html">社团简介</a></li>
+            <li><a href="https://baike.baidu.com/item/%E5%AD%94%E7%9B%AE%E6%B9%96%E6%96%87%E5%AD%A6%E7%A4%BE">社团简介</a></li>
             <li><a href="share.html">美文分享</a></li>
             <li><a href="talking.html">文谈文坛</a></li>
             <li><a href="others.html">奇闻轶事</a></li>
@@ -22,6 +32,9 @@
             <input type="button" value="搜索" />
         </form>
     </nav>
+   <!-- <div id="search">
+        <form><input name="search" type="text" size="100%" /></form>
+    </div>-->
     <div id="body1">
         <div id="pic"><img src="img/article/pic3.jpg"></div>
         <div id="article">
@@ -30,12 +43,12 @@
             <div id="art_bottom">王绪平&nbsp;&nbsp;&nbsp;&nbsp;12月7日</div>
         </div>
     </div>
-  <!--  <div id="right1">
+    <!--  <div id="right1">
         <h1>热门文章</h1>
     </div>-->
     <div id="body2">
         <div id="pic" style="background-image: url(../img/article/pic4.jpg);
-    background-size: cover";></div>
+    background-size: cover" ;></div>
         <div id="article">
             <a href="#">沉睡王国</a>
             <p id="description">&nbsp;&nbsp;天气真是冷的可爱极了，一阵一阵的风把昏睡的人吹得精神饱满。正下落的太阳也忙赶回家避寒。 看着落日渐满西山，国王的眼睛里尽是幽暗的光。
@@ -62,7 +75,7 @@
         </div>
     </div>
 
-    <div class="weixin"></div>
+    <div id='weixin'></div>
 
     <div id="bottom">
         <div class="about">
@@ -74,12 +87,7 @@
             <ul>
                 <li><a href="http://blog.sina.com.cn/u/2847206652"><img src="img/blog.png"/></a></li>
                 <li><a href="https://weibo.com/u/2847206652"><img src="img/Weibo.png"/></a></li>
-                <li><img src="img/Wechat.png" onmouseover="display()"></li>
-                <script>
-                    function display() {
-                        document.getElementsByClassName("weixin").display = "block";
-                    }
-                </script>
+                <li><img src="img/Wechat.png" onmouseover="display('weixin')"></li>
             </ul>
         </div>
 
