@@ -15,7 +15,7 @@ nav {
 }
 
 #body1 {
-    width: 1052px;
+    width:1050px;
     height: 300px;
     float: left;
     background-color:#d6d6d6;
@@ -25,7 +25,7 @@ nav {
 }
 
 #body2 {
-    width: 78%;
+    width: 1050px;
     height: 300px;
     background-color: #d6d6d6;
     float: left;
@@ -35,7 +35,7 @@ nav {
 }
 
 #body3 {
-    width: 78%;
+    width: 1050px;
     height: 300px;
     background-color: #d6d6d6;
     float: left;
@@ -45,7 +45,7 @@ nav {
 }
 
 #body4 {
-    width: 78%;
+    width: 1050px;
     height: 300px;
     background-color: #d6d6d6;
     float: left;
@@ -121,7 +121,7 @@ nav ul {
 
 nav form {
     position: absolute;
-    left: 1090px;
+    left: 1090px    ;
     line-height: 80px;
 }
 
@@ -197,7 +197,7 @@ nav form input {
 
 .contact li {
     display: inline;
-    margin: 60px;
+    margin: 50px;
     border-style: solid;
     border-color: #ba9f7c;
 }
